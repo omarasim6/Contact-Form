@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="div">
+      <h1> ✉ </h1>
+      <h2>Contact Us<span class="dot">.</span></h2>
+      <p>Or reach us via: <span class="email">sunyasim@gmail.com</span></p>
+
+      <br>
+
+      <form id="contactForm">
+        <!-- Name and Email -->
+        <div class="name-row">
+          <div class="input-group">
+            <input type="text" id="fname" name="fname" placeholder="Full Name" required>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+        </div>
+
+        <!-- Phone and Company -->
+        <div class="name-row">
+          <div class="input-group">
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+          </div>
+          <div class="input-group">
+            <input type="text" id="company" name="company" placeholder="Company">
+          </div>
+        </div>
+
+        <!-- Custom Select -->
+        <div class="custom-select-wrapper">
+          <div class="custom-select" id="customSelect">
+            <div class="selected">
+              <!-- SVG down arrow icon -->
+              <svg class="icon-left" xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16" fill="white">
+                <path d="M7 10l5 5 5-5H7z"/>
+              </svg>
+              <span class="selected-text"> What can we help you with ? </span>
+            </div>
+            <div class="options">
+              <div>General Inquiry</div>
+              <div>Technical Support</div>
+              <div>Pricing & Billing</div>
+              <div>Partnership / B2B</div>
+              <div>Other</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="input-group">
+          <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
+            Subscribe to our newsletter
+          </label>
+          <label>
+            <input type="checkbox" id="terms" name="terms" value="terms" required />
+            I accept the Terms and Privacy Policy *
+          </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-row">
+          <button class="submit-btn" type="submit">Submit →</button>
+          <button class="reset-btn" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
